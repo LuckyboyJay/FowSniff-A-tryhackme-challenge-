@@ -31,7 +31,7 @@ I launched my attacker virtual machine and ensured it had an up-to-date network 
 I started the OpenVPN client using the TryHackMe provided .ovpn profile that authenticates and places my VM onto TryHackMe’s lab network. The client completed a successful TLS handshake with the TryHackMe VPN server and established a virtual TUN interface.
 
 Once the tunnel came up, the client received an internal VPN address from the lab and the server pushed the lab routing information to my machine. The VPN reported the assignment of the lab subnet address and the pushed routes for TryHackMe lab networks. 
-![machineip](first i.p.png) 
+![machineip](firsti.p.png) 
 
 I validated basic reachability by using the simplest network check — specifically, I sent ICMP probes to the target IP and observed responses — confirming the VPN tunnel was operational and the target was reachable from my attacker VM.
 
