@@ -53,3 +53,14 @@ A successful VPN session requires both a valid lab profile and a functioning net
 If the TUN interface is present but the target is unreachable, common causes include missing routes from the server, route installation races on the client, or local firewall rules blocking tunnel traffic — these are the things I would inspect if connectivity had failed.
 
 I recorded the VPN connection session output and a quick network reachability snapshot as part of the evidence package for reproducibility and later analysis.
+
+
+# Step 2
+
+Answering the questions accoringly from the challenge. I scanned the target from my attacking machine using Nmap to discover open services and versions.
+nmap -sV --open
+this is ran to quickly identify which services are running (FTP, POP3, SSH, HTTP, etc.) and their versions so I know where to focus enumeration and exploitation efforts.
+Then i looked for open ports and corresponding services.
+Service versions that hint at vulnerabilities or known misconfigurations.
+Unusual or unexpected services that could indicate additional attack paths.
+Any banners or extra information (FTP welcome messages, HTTP titles) that might contain usernames, paths, or clues.
