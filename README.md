@@ -59,9 +59,8 @@ I recorded the VPN connection session output and a quick network reachability sn
 
 Answering the questions accoringly from the challenge. I scanned the target from my attacking machine using Nmap to discover open services and versions.
 nmap -sV --open
-this is ran to quickly identify which services are running (FTP, POP3, SSH, HTTP, etc.) and their versions so I know where to focus enumeration and exploitation efforts.
+this is ran to quickly identify which services are running (FTP, POP3, SSH, HTTP, etc.) and their versions so I know where to focus enumeration and exploitation efforts.\
 Then i looked for open ports and corresponding services.
-
 Service versions that hint at vulnerabilities or known misconfigurations.
 Unusual or unexpected services that could indicate additional attack paths.
 Any banners or extra information (FTP welcome messages, HTTP titles) that might contain usernames, paths, or clues.
