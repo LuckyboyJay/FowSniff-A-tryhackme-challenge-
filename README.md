@@ -64,3 +64,4 @@ Then i looked for open ports and corresponding services.
 Service versions that hint at vulnerabilities or known misconfigurations.
 Unusual or unexpected services that could indicate additional attack paths.
 Any banners or extra information (FTP welcome messages, HTTP titles) that might contain usernames, paths, or clues.
+![](nmap.png)
