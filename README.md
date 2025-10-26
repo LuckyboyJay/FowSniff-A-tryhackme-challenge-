@@ -24,7 +24,7 @@ Fowsniff is a TryHackMe room that demonstrates a common, realistic attack chain 
 ### Objective
 Place my attacker environment on the TryHackMe lab network so the target machine is reachable and all subsequent steps are performed within the authorized lab environment.
 
-### What I did (narrative, no CLI)
+### What I did:
 
 I launched my attacker virtual machine and ensured it had an up-to-date network stack and the VPN client available.
 
@@ -33,7 +33,7 @@ I started the OpenVPN client using the TryHackMe provided .ovpn profile that aut
 Once the tunnel came up, the client received an internal VPN address from the lab and the server pushed the lab routing information to my machine. The VPN reported the assignment of the lab subnet address and the pushed routes for TryHackMe lab networks. 
 ![machineip](1.png)https://github.com/LuckyboyJay/FowSniff-A-tryhackme-challenge-/blob/main/first%20i.p%20.png
 
-I validated basic reachability by using the simplest network check — specifically, I sent ICMP probes to the target IP and observed responses — confirming the VPN tunnel was operational and the target was reachable from my attacker VM.
+I validated basic reachability by using the simplest network check, specifically, I sent ICMP probes to the target IP and observed responses confirming the VPN tunnel was operational and the target was reachable from my attacker VM.
 
 ### Evidence / expected signs of success (what I observed)
 
